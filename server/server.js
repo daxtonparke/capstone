@@ -6,6 +6,6 @@ app.use(cors())
 app.use(express.json())
 const ctrl = require('./controller.js')
 
-port = process.env.PORT || 4004
+port = process.env.PORT || 4204
 
-app.listen(4004, console.log(`literally crying and screaming on port ${port}`))
+app.listen(port, console.log(`literally crying and screaming on port ${port}`))

@@ -39,8 +39,8 @@ module.exports = {
         VALUES('dax', 'daxp', 'pass'),
         ('user', 'curruser', 'pass2');
 
-        INSERT INTO cards (creator_id, name, naughty)
-        VALUES (1, 'mike', 50);
+        INSERT INTO cards (creator_id, name, naughty, img)
+        VALUES (1, 'mike', 50, 'https://kh.wiki.gallery/images/9/90/Mike_Wazowski_KHIII.png');
 
         `).then(()=> {
             console.log('db seeded')

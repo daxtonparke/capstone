@@ -75,7 +75,7 @@ module.exports = {
             res.status(400).send('100 is maximum')
         }else if(type === 'plus' ){
             naughtyValue = naughty + 5}
-        console.log('controller',req.params)
+        console.log('controller',req.params,req.body)
         sequelize.query(`
         UPDATE cards
         SET naughty = ${naughtyValue}

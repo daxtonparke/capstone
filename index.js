@@ -36,11 +36,11 @@ const createCard = card => {
     </style>
     <div id="card-${card.card_id}"class="card-image"></div>
     <p class="name">${card.name}</p>
-    <div class="naughty-container">
-        <button onclick="updateCard(${card.card_id}, 'minus')">-</button>
+    <li class="naughty-container">
+        <button onclick="updateCard(${card.card_id}, 'minus',${card.naughty})">-</button>
         <p class="naughty-amount">${card.naughty}</p>
-        <button onclick="updateCard(${card.card_id}, 'plus')">+</button>
-    </div>
+        <button onclick="updateCard(${card.card_id}, 'plus',${card.naughty})">+</button>
+    </li>
     <button class = "delete-button" onclick="deleteCard(${card.card_id})">delete</button>
     `
     cardContainer.appendChild(newCard)
